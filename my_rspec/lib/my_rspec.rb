@@ -4,5 +4,6 @@ require_relative "my_rspec/version"
 
 module MyRspec
   class Error < StandardError; end
-  # Your code goes here...
+
+  def self.describe = nil
 end
