@@ -5,5 +5,5 @@ require "my_rspec"
 
 require "minitest/autorun"
 
-# require "minitest/reporters"
-# Minitest::Reporters.use!
+require "minitest/reporters"
+Minitest::Reporters.use!

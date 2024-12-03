@@ -9,22 +9,41 @@ GEM
     ansi (1.5.0)
     ast (2.4.2)
     builder (3.3.0)
+    coderay (1.1.3)
+    ffi (1.17.0)
+    ffi (1.17.0-x86_64-linux-gnu)
     json (2.9.0)
     language_server-protocol (3.17.0.3)
+    listen (3.9.0)
+      rb-fsevent (~> 0.10, >= 0.10.3)
+      rb-inotify (~> 0.9, >= 0.9.10)
+    method_source (1.1.0)
     minitest (5.25.2)
     minitest-reporters (1.7.1)
       ansi
       builder
       minitest (>= 5.0)
       ruby-progressbar
+    observer (0.1.2)
     parallel (1.26.3)
     parser (3.3.6.0)
       ast (~> 2.4.1)
       racc
+    pry (0.15.0)
+      coderay (~> 1.1)
+      method_source (~> 1.0)
     racc (1.8.1)
     rainbow (3.1.1)
     rake (13.2.1)
+    rb-fsevent (0.11.2)
+    rb-inotify (0.11.1)
+      ffi (~> 1.0)
     regexp_parser (2.9.3)
+    retest (1.13.2)
+      listen (~> 3.9)
+      observer (~> 0.1)
+      string-similarity (~> 2.1)
+      tty-option (~> 0.1)
     rubocop (1.69.1)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
@@ -38,6 +57,8 @@ GEM
     rubocop-ast (1.36.2)
       parser (>= 3.3.1.0)
     ruby-progressbar (1.13.0)
+    string-similarity (2.1.0)
+    tty-option (0.3.0)
     unicode-display_width (3.1.2)
       unicode-emoji (~> 4.0, >= 4.0.4)
     unicode-emoji (4.0.4)
@@ -48,9 +69,11 @@ PLATFORMS
 
 DEPENDENCIES
   minitest (~> 5.16)
-  minitest-reporters (~> 1.7.1)
+  minitest-reporters
   my_rspec!
+  pry
   rake (~> 13.0)
+  retest
   rubocop (~> 1.21)
 
 BUNDLED WITH
